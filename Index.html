@@ -1,0 +1,881 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0083)file:///C:/Users/samhe/AppData/Roaming/DocPreview/Temp/vs.17084/doc.1439716822.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="./Index_files/ContentsMerged.css">
+    <title>Class GenericClass</title>
+</head>
+<a href="AppCommandFactoryDocs.html">AppCommandFactory Docs</a>
+<a href="appTestDocs.html">AppTest Docs</a>
+<a href="appWriteDocs.html">AppTests Docs</a>
+<a href="CircleDocs.html">Circle Docs</a>
+<a href="DrawTo.html">DrawTo Docs</a>
+<a href="IntDocs.html">Int Docs</a>
+<a href="MoveToDocs.html"MoveTo Docs</a>
+<a href="RealDocs.html">Real Docs</a>
+<a href="Rect.html">Rect Docs</a>
+<a href="TriangleDocs.html">Triangle Docs</a>
+<body><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Class AppCanvas</div>
+    <div id="Contents">
+
+    
+ Canvas class that implements the ICanvas interface and defines all of the methods inside.
+ Methods include drawing and settings pen features
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public class AppCanvas : ICanvas</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Constructor AppCanvas</div>
+    <div id="Contents">
+
+    
+ Constructor method for the AppCanvas class.
+ Takes no parameters, but calls Set(XSIZE, YSIZE).
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public AppCanvas()</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Examples
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+AppCanvas canvas = new AppCanvas();
+</div>
+</div>
+
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Property Xpos</div>
+    <div id="Contents">
+
+    
+ Defines the co-ordinate x position of the pen on the canvas. <br>
+ (0,0) would be the top left.<br>
+ Provides a setter and a getter method.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public int Xpos</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Property Ypos</div>
+    <div id="Contents">
+
+    
+ Defines the co-ordinate y position of the pen on the canvas. <br>
+ (0,0) would be the top left.<br>
+ Provides a setter and a getter method.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public int Ypos</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Property PenColour</div>
+    <div id="Contents">
+
+    
+ Defines an object containing the colour of the pen to be written on the canvas. <br>
+ The pen colour will have a method to set it to a custom value.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public object PenColour</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method Circle</div>
+    <div id="Contents">
+
+    
+ Draws a circle starting from the current x and y position of the pen.<br>
+ The circle is drawn around the current pen position, with the x and y co-ordinate at the centre.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public void Circle(int radius, bool filled)</pre></td></tr></tbody></table>
+    
+    <div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">radius</div><div class="ParameterCommentContainer">
+Type: int<br>Defines the radius of the circle: the distance between the centre (current pen psoition) and the outer edge of the circle.
+</div>
+<div class="CommentParameterName">filled</div><div class="ParameterCommentContainer">
+Type: boolean<br>States wether or not the circle will be filled with colour or just provide an outline.
+</div>
+
+    
+    
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Exceptions
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+<table class="MembersTable">
+<colgroup><col width="25%">
+<col width="75%">
+</colgroup><tbody><tr>
+<th>Exception</th>
+<th>Condition</th></tr>
+<tr>
+<td><span class="PseudoLink">CanvasException</span></td>
+<td>The radius provided is less than zero</td>
+</tr>
+</tbody></table>
+</div>
+
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Examples
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+canvas.Circle(50, false);
+</div>
+</div>
+
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method Clear</div>
+    <div id="Contents">
+
+    
+ Fetches the graphics context from the bitmap, clears the surface and colours it white.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public void Clear()</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Examples
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+canvas.Clear();
+</div>
+</div>
+
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method DrawTo</div>
+    <div id="Contents">
+
+    
+ Draws a line from the current co-ordinate position of the pen to the specified co-ordinates.<br>
+ End co-ordinates are passed in as parameters.<br>
+ Draws with the current pen's state, the line can vary in colour, thickness and opacity.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public void DrawTo(int toX, int toY)</pre></td></tr></tbody></table>
+    
+    <div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">toX</div><div class="ParameterCommentContainer">
+Defines the x co-ordinate that the line should draw to.<br>
+</div>
+<div class="CommentParameterName">toY</div><div class="ParameterCommentContainer">
+Defines the x co-ordinate that the line should draw to.
+</div>
+
+    
+    
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Exceptions
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+<table class="MembersTable">
+<colgroup><col width="25%">
+<col width="75%">
+</colgroup><tbody><tr>
+<th>Exception</th>
+<th>Condition</th></tr>
+<tr>
+<td><span class="PseudoLink">CanvasException</span></td>
+<td>The x or y co-ordinates are each either less than zero, or out of bounds of the canvas.</td>
+</tr>
+</tbody></table>
+</div>
+
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Examples
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+canvas.DrawTo(40,50);
+</div>
+</div>
+
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method getBitmap</div>
+    <div id="Contents">
+
+    
+ Returns the defined bitmap.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public object getBitmap()</pre></td></tr></tbody></table>
+    
+    
+    <div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+
+</div>
+
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method MoveTo</div>
+    <div id="Contents">
+
+    
+ Moves from the current co-ordinate position of the pen to the specified co-ordinates.<br>
+ End co-ordinates are passed in as parameters.<br>
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public void MoveTo(int x, int y)</pre></td></tr></tbody></table>
+    
+    <div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">toX</div><div class="ParameterCommentContainer">
+Defines the x co-ordinate that the line should move to.<br>
+</div>
+<div class="CommentParameterName">toY</div><div class="ParameterCommentContainer">
+Defines the x co-ordinate that the line should move to.
+</div>
+
+    
+    
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Exceptions
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+<table class="MembersTable">
+<colgroup><col width="25%">
+<col width="75%">
+</colgroup><tbody><tr>
+<th>Exception</th>
+<th>Condition</th></tr>
+<tr>
+<td><span class="PseudoLink">CanvasException</span></td>
+<td>The x or y co-ordinates are each either less than zero, or out of bounds of the canvas.</td>
+</tr>
+</tbody></table>
+</div>
+
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Examples
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+canvas.MoveTo(40,50);
+</div>
+</div>
+
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method Rect</div>
+    <div id="Contents">
+
+    
+ Draws a rectangle, with the starting co-ordinates being the current position of the pen.<br>
+ The rectangle is drawn from the current pen position, with (x,y) being the top left of the rectangle.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public void Rect(int width, int height, bool filled)</pre></td></tr></tbody></table>
+    
+    <div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">width</div><div class="ParameterCommentContainer">
+Type: int<br>Defines the width of the rectangle.
+</div>
+<div class="CommentParameterName">height</div><div class="ParameterCommentContainer">
+Type: int<br>Defines the height of the rectangle.
+</div>
+<div class="CommentParameterName">filled</div><div class="ParameterCommentContainer">
+Type: boolean<br>Defines wether or not the rectangle is filled with colour or drawn as an outline
+</div>
+
+    
+    
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Exceptions
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+<table class="MembersTable">
+<colgroup><col width="25%">
+<col width="75%">
+</colgroup><tbody><tr>
+<th>Exception</th>
+<th>Condition</th></tr>
+<tr>
+<td><span class="PseudoLink">CanvasException</span></td>
+<td>Either the width or the height is passed a value less than zero</td>
+</tr>
+</tbody></table>
+</div>
+
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Examples
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+canvas.Rect(20, 40, false);
+</div>
+</div>
+
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method Reset</div>
+    <div id="Contents">
+
+    
+ Sets the pen position to (0,0).<br>
+ Sets the pen colour to black and the pen size to its original value.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public void Reset()</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Examples
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+myCanvas.Reset();
+</div>
+</div>
+
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method Set</div>
+    <div id="Contents">
+
+    
+ Method that is passed to the constructor.<br>
+ Sets the canvas size, the pen colour and size, and retrieves the graphics context.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public void Set(int xsize, int ysize)</pre></td></tr></tbody></table>
+    
+    <div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">xsize</div><div class="ParameterCommentContainer">
+Type: int<br>Defines the width of the canvas.
+</div>
+<div class="CommentParameterName">ysize</div><div class="ParameterCommentContainer">
+Type: int<br>Defines the height of the canvas.
+</div>
+
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method SetColour</div>
+    <div id="Contents">
+
+    
+ Changes the colour of the pen to the given parameter as an r,g,b value.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public void SetColour(int red, int green, int blue)</pre></td></tr></tbody></table>
+    
+    <div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">red</div><div class="ParameterCommentContainer">
+Type: int<br>RGB value between 0 and 255 specifying the amount of red.
+</div>
+<div class="CommentParameterName">green</div><div class="ParameterCommentContainer">
+Type: int<br>RGB value between 0 and 255 specifying the amount of green.
+</div>
+<div class="CommentParameterName">blue</div><div class="ParameterCommentContainer">
+Type: int<br>RGB value between 0 and 255 specifying the amount of blue.
+</div>
+
+    
+    
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Exceptions
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+<table class="MembersTable">
+<colgroup><col width="25%">
+<col width="75%">
+</colgroup><tbody><tr>
+<th>Exception</th>
+<th>Condition</th></tr>
+<tr>
+<td><span class="PseudoLink">CanvasException</span></td>
+<td>Either the red, green or blue parameter value is not within the range 0-255.</td>
+</tr>
+</tbody></table>
+</div>
+
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Examples
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+myCanvas.SetColour(255,255,255);
+</div>
+</div>
+
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method Tri</div>
+    <div id="Contents">
+
+    
+ Draws a triangle with the specified width and height passed as paramters.<br>
+ Starts from the bottom left of the triangle.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public void Tri(int width, int height)</pre></td></tr></tbody></table>
+    
+    <div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">width</div><div class="ParameterCommentContainer">
+Type: Int<br>Defines the width of the triangle.
+</div>
+<div class="CommentParameterName">height</div><div class="ParameterCommentContainer">
+Type: Int<br>Defines the height of the triagnle.
+</div>
+
+    
+    
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Exceptions
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+<table class="MembersTable">
+<colgroup><col width="25%">
+<col width="75%">
+</colgroup><tbody><tr>
+<th>Exception</th>
+<th>Condition</th></tr>
+<tr>
+<td><span class="PseudoLink">CanvasException</span></td>
+<td>Either the width or the height parameters are less than zero.</td>
+</tr>
+</tbody></table>
+</div>
+
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Examples
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+myCanvas.Tri(100,150);
+</div>
+</div>
+
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method WriteText</div>
+    <div id="Contents">
+
+    
+ Takes a single string param
+ eter, checks the validity of the parameter, then the <br>
+ string is outputted to the canvas. Font size and colour are, by default, 12 and black.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public void WriteText(string text)</pre></td></tr></tbody></table>
+    
+    <div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">text</div><div class="ParameterCommentContainer">
+The text that will be drawn on the canvas
+</div>
+
+    
+    
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./Index_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Exceptions
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+<table class="MembersTable">
+<colgroup><col width="25%">
+<col width="75%">
+</colgroup><tbody><tr>
+<th>Exception</th>
+<th>Condition</th></tr>
+<tr>
+<td><span class="PseudoLink">CanvasException</span></td>
+<td></td>
+</tr>
+</tbody></table>
+</div>
+
+    
+    
+
+</div>
+<p></p>
+
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></body></html>
